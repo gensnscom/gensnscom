@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		#header {
+			position: absolute;
+			float: left;
+			width: 100%;
+			height: 50px;
+			border-bottom: 2px;
+			border-bottom-color: bisque;
+		}
+		#logo {
+			position: absolute;	
+			float: left;
+		}
+		#h1 {
+			position: relative;
+			float: left;
+			top: 50px;
+			left: 240px;
+			font-size: 35px;
+		}
+		hr {
+			width: 1000px;
+			height: 5px;
+			background-color: green;
+		}
+		
+		.login {
+			position: relative;
+			top: 200px;
+			left: 600px;
+			width: 200px;
+			height: 400px;
+			
+		}
+		
+		form {
+			position: relative;
+			width: 300px;
+			height: 240px;
+			border: 1px solid lightgreen;
+			border-radius: 3px;
+			text-align: center;
+		}
+		input {
+			border: 1px solid #ccc;
+			padding: 7px 0px;
+			margin-bottom: 15px;
+			border-radius: 3px;
+			padding-left: 5px;
+			
+		}
+		button {
+			width: 200px;
+			height: 30px;
+			text-align: center;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			border-radius: 5px;
+			background-color: #008000;
+			font-size: 16px;
+			
+		}
+		#footer {
+			position: relative;
+			width: 1500px;
+			top:150px;
+			left: 0;
+			text-align: center;
+			
+		}
+		#info {
+		
+			text-align: center;
+		}
+		.hr1 {
+			width: 1000px;
+			height: 5px;
+			left: 0;			
+			background-color: green;
+		}
+		</style>
+	</head>
+	<body>
+		
+		
+		<div id="header">
+			<div id="logo">
+			<img src="./image/logo.png">	
+			</div>
+			<div id="h1">&nbsp寻找我们的根,&nbsp建立我们的网!
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a style="font-size: 14px;">回首页</a>
+			&nbsp&nbsp<a style="font-size: 14px;">论坛</a>
+			&nbsp&nbsp<a style="font-size: 14px;">旧版</a>
+			<hr />
+			</div>			
+		</div>
+		
+		<div class="login">登录
+			<form action="#" method="post">
+				<h2 style="text-align: center;">用户登录</h2>
+				用户名称：<input name="user" maxlength="20" placeholder="输入用户名称"/><br />
+				用户密码：<input type="password" name="pass1" maxlength="16" placeholder="输入用户密码" /><br />
+				<button type="submit" value="提交" style="color: #F0FFFF;"/>提&nbsp&nbsp&nbsp&nbsp交</button><br />
+				<a >注册</a>&nbsp&nbsp&nbsp&nbsp
+				<a >忘记密码</a>
+			</form>
+			
+			
+		</div>
+		
+		<div id="footer">
+			<div id="info">
+				<a>关于我们</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a>联系我们</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a>隐私保护</a>
+			</div>
+			<hr class="hr1" />
+			<p align="center">
+			    版权所有：XXXXX&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp京ICP备：XXXXX
+			</p>
+		</div>
+		<!--
+		<div  class="container col-md-12">
+		<div class="container col-md-10 col-md-offset-1">
+		    <div class="media" style="padding:15px 0 0 0">
+		           <div class="container col-md-2">
+		                <div class="media-left">
+		                    <a href="/">
+		                        <img class="media-object" src="/Public/Images/Index/logo.jpg" alt="根网">
+		                    </a>
+		                </div>
+		            </div>
+		
+		            <div class="container col-md-10">
+		                <div class="media-body" >
+		                        <br><br><br><br>
+		                    <div class="media-heading col-md-12" >
+		
+		                            <h1 style="display:inline" class="col-md-offset-13">寻找我们的根&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp建立我们的网
+		                            </h1>
+		                            <h4 style="display:inline"><a href="/admin.php?m=Index&a=index" class="col-md-offset-13">回首页</a>&nbsp&nbsp
+		                           <a href="#" >论坛</a>&nbsp&nbsp<a href="#" >旧版</a></h4>
+		                        <!-- 
+		                            <h2 style="display:inline" class="col-md-6 col-md-offset-1">寻找我们的根&nbsp&nbsp建立我们的网</h2>
+		                            <h4 style="display:inline" class="col-md-3 col-md-offset-2"><a href="#">论坛</a>&nbsp&nbsp
+		                            <a href="#" >旧版</a>&nbsp&nbsp<a href="/" >回首页</a></h4> -->
+		                   <!--
+							</div>
+		                </div>
+		            </div>
+		    </div>
+		    <hr  width=100% style="height:10px;border:none;border-top:5px groove skyblue;font-size:0px; line-height:0px; padding:0px; margin:0 0 10px 0;" />
+		</div>
+		<div class="container col-md-1"></div>
+		</div>
+		<div class="col-md-12">
+		        <br><br><br><br><br>
+		    </div>
+		    <!--避免页脚遮挡-->    
+			<!--
+		<div id="foot" class="footer">
+		    <nav class="navbar navbar-default navbar-fixed-bottom">
+		        <div class="navbar-inner navbar-content-center">
+		            <p class="text-muted credit" style="padding: 5px;"></p>
+		            <ul class="list-inline">
+		                <li class="col-md-offset-2"><a href="" >关于我们</a></li>
+		                <li class="col-md-offset-3"><a href="" >联系我们</a></li>
+		                <li class="col-md-offset-3"><a href="" >隐私保护</a></li>
+		            </ul>
+		            <p align="center">
+		                版权所有：XXXXX&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp京ICP备：XXXX
+		            </p>
+		        </div>
+		    </nav>
+		</div>
+		-->
+	</body>
+</html>
